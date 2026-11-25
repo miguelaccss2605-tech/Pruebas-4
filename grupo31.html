@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grupo 31 - FarmaSalud</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p><a href="index.html">← Volver al menú</a></p>
+  <h1>GRUPO 31: Control de Inventario de Farmacia Universitaria ("FarmaSalud")</h1>
+
+  <div class="card">
+    <h2>Inventario actual</h2>
+    <div id="inventario"></div>
+    <button id="reiniciar" class="sec">Reiniciar inventario</button>
+  </div>
+
+  <div class="card">
+    <h2>Registrar venta</h2>
+    <div class="fila">
+      <div><label for="medicamento">Medicamento</label><select id="medicamento"></select></div>
+      <div><label for="cantidad">Cantidad</label><input id="cantidad" type="number" min="1" value="1"></div>
+      <div>
+        <label for="presentaReceta">¿El cliente presenta receta?</label>
+        <select id="presentaReceta"><option value="false">No</option><option value="true">Sí</option></select>
+      </div>
+    </div>
+    <button id="vender">Vender</button>
+    <div id="salida" class="resultado"></div>
+  </div>
+
+  <div class="card">
+    <h2>Pruebas (caja blanca y caja negra)</h2>
+    <button id="probar">Ejecutar pruebas</button>
+    <div id="pruebas"></div>
+  </div>
+</main>
+<script src="util.js"></script>
+<script src="grupo31.js"></script>
+</body>
+</html>

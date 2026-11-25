@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grupo 32 - CubículoLab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p><a href="index.html">← Volver al menú</a></p>
+  <h1>GRUPO 32: Gestor de Reservas de Cubículos de Estudio ("CubículoLab")</h1>
+
+  <div class="card">
+    <div class="fila">
+      <div>
+        <label for="tipo">Tipo de cubículo</label>
+        <select id="tipo">
+          <option value="pequeño">Pequeño (mín. 2 personas)</option>
+          <option value="grande">Grande (mín. 5 personas)</option>
+        </select>
+      </div>
+      <div><label for="numero">Número de cubículo</label><input id="numero" type="number" min="1" value="1"></div>
+      <div><label for="alumnos">Alumnos integrantes</label><input id="alumnos" type="number" min="0" value="2"></div>
+      <div><label for="horas">Horas requeridas (máx. 2)</label><input id="horas" type="number" min="1" step="1" value="1"></div>
+    </div>
+    <button id="reservar">Reservar</button>
+    <div id="salida" class="resultado"></div>
+  </div>
+
+  <div class="card">
+    <h2>Reservas aprobadas</h2>
+    <div id="lista">Aún no hay reservas.</div>
+  </div>
+
+  <div class="card">
+    <h2>Pruebas (caja blanca y caja negra)</h2>
+    <button id="probar">Ejecutar pruebas</button>
+    <div id="pruebas"></div>
+  </div>
+</main>
+<script src="util.js"></script>
+<script src="grupo32.js"></script>
+</body>
+</html>
