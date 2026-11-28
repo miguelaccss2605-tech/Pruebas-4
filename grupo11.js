@@ -46,6 +46,3 @@ document.getElementById("vaciar").addEventListener("click", function () {
   dibujarSalida([]);
 });
 
-document.getElementById("procesar").addEventListener("click", function () {
-  dibujarSalida(procesarCobros(clientes));
-});
