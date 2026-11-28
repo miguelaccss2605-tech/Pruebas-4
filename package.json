@@ -1,0 +1,8 @@
+{
+  "name": "programas-condiciones-y-ciclos",
+  "version": "1.0.0",
+  "description": "Grupos 11, 8, 31 y 32: lógica en JavaScript con pruebas unitarias (node:test)",
+  "scripts": {
+    "test": "node --test"
+  }
+}

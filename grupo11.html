@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grupo 11 - Cobro Recurrente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p><a href="index.html">← Volver al menú</a></p>
+  <h1>GRUPO 11: Gestor de Cobro Recurrente y Suscripciones</h1>
+
+  <div class="card">
+    <h2>Agregar cliente</h2>
+    <div class="fila">
+      <div><label for="nombre">Nombre</label><input id="nombre" placeholder="Ej: Ana López"></div>
+      <div><label for="cuota">Cuota mensual ($)</label><input id="cuota" type="number" min="0" step="0.01" value="20"></div>
+      <div><label for="mora">Días de mora</label><input id="mora" type="number" min="0" step="1" value="0"></div>
+    </div>
+    <button id="agregar">Agregar cliente</button>
+    <button id="ejemplo" class="sec">Cargar ejemplo</button>
+    <button id="vaciar" class="sec">Vaciar lista</button>
+  </div>
+
+  <div class="card">
+    <h2>Clientes</h2>
+    <button id="procesar">Procesar cobros</button>
+    <div id="salida" class="resultado">La lista está vacía.</div>
+  </div>
+</main>
+<script src="util.js"></script>
+<script src="logica11.js"></script>
+<script src="grupo11.js"></script>
+</body>
+</html>
